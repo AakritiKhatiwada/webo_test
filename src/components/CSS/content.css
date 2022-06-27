@@ -1,0 +1,60 @@
+.second-content{
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    background: #F5F6F8;;
+    z-index: 100;
+
+}
+ 
+.content-info p{
+    font-family: 'Manrope';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 60px;
+}
+ 
+.content-image{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+.content-image div{
+    padding: 60px 90px;
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+}
+ 
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6,
+.box-7{
+    flex: 0.5;
+}
+ 
+@media screen and (max-width: 640px) {
+    .second-content .content-info p{
+        font-size: 17px;
+    }
+    .second-content{
+        height: 100%;
+    }
+}
+ 
+@media screen and (max-width: 1008px) {
+    .second-content{
+        height: 100%;
+    }
+    .content-image{
+        margin-right: 0px;
+    }
+    .content-image div{
+        padding: 60px 50px;
+    }
+}
